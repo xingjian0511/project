@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Own Car!</title>
+    </head>
+    <body>
+    <script src="carScript.js"></script> 
+        <h1>My Own Car</h1>
+            <p>Welcome to My Own Car! We build the specially modified cars for our customers!</p>
+        
+        <form>
+            <h2>Engine</h2>     
+            <!--engine selection-->
+            <input type="radio" name="Engines" value="150 HP"> 150 HP<br>
+            <input type="radio" name="Engines" value="250 HP"> 250 HP<br>
+            <input type="radio" name="Engines" value="400 HP"> 400 HP<br>
+        </form>
+        <form>
+            <h2>Body Size</h2>
+            <!--body size selection-->
+            <input type="radio" name="BodySize" value="compact"> Similar to Ford Fiesta<br>
+            <input type="radio" name="BodySize" value="full size"> Similar to Ford Fusion<br>
+            <input type="radio" name="BodySize" value="Pony"> Similar to Ford Mustang<br>
+        </form>
+        <form>
+            <h2>Body Color</h2>
+            <!--body color selection, blue color defulted-->
+            <input type="radio" name="BColor"  value="Blue" checked> Blue<br>
+            <input type="radio" name="BColor"  value="Red"> Red<br>
+            <input type="radio" name="BColor"  value="Gold"> Gold<br>
+        </form>
+        <form>
+            <h2>Wheels</h2>
+            <!--wheels selection-->
+            <input type="radio" name="Wheels"  value="Type1"> Type 1<br>
+            <img src="type1.png" alt="Type 1" style="width:260px;height:228px;"><br>
+            <input type="radio" name="Wheels"  value="Type2"> Type 2<br>
+            <img src="type2.png" alt="Type 2" style="width:260px;height:228px;"><br>
+            <input type="radio" name="Wheels"  value="Type3"> Type 3<br>
+            <img src="type3.png" alt="Type 3" style="width:260px;height:228px;"><br>
+        </form>
+        <form>
+            <h2>Wheels Color</h2>
+            <!--wheels color selection, blue color defulted-->
+            <input type="radio" name="WColor"  value="Blue" checked> Blue<br>
+            <input type="radio" name="WColor"  value="Red"> Red<br>
+            <input type="radio" name="WColor"  value="Gold"> Gold<br>
+        </form>     
+        <form>
+            <h2>Your Information</h2>
+            <!--customer information-->
+            Your Name:<br>
+            <input type="text" id="Name" required>
+            <br> Phone Number<br>
+            <input type="tel" id="phoneNumber" value="" required>
+            <br>
+        </form>
+        <button onclick="PlaceOrder()">Submit</button>>
+        <h2 id="order" style="display:none">Order Details</h2>>
+        <p id="detail"></p>
+        
+</body>
+</html>
